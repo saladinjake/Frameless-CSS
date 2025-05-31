@@ -55,11 +55,11 @@
   --color-gray-600: #718096;
   --color-gray-700: #4a5568;
   --color-gray-800: #2d3748;
-  --color-gray-900: #1a202c;
+   --color-gray-900: #1a202c;
   --color-white: #ffffff;
 
 
-  
+ 
   
   --rounded-sm: 0.125rem;
   --rounded-md: 0.375rem;
@@ -523,6 +523,10 @@
 .border-2      { border-width: 2px; }
 .border-red    { border-color: #ef4444; }
 
+.shadow-sm { box-shadow: var(--shadow); }
+.shadow { box-shadow: var(--shadow); }
+.shadow-md { box-shadow: var(--shadow-md); }
+.shadow-lg { box-shadow: var(--shadow-lg); }
 
 .rounded-sm { border-radius: 4px; }
 .rounded { border-radius: var(--rounded-md); }

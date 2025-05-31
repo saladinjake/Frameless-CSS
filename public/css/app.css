@@ -1,0 +1,46 @@
+
+
+
+/* Here i add base style + any css reset if any */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-gray-700);
+  background-color: var(--color-white);
+
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* Application Navigation */
+header { position: relative; z-index: 10;  }
+.nav a { font-weight: 500; }
+#menu-toggle:checked ~ #mobile-menu { max-height: 500px; }
+#mobile-menu { transition: max-height var(--transition-medium) ease-in-out; }
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: var(--space-4) var(--space-6);
+  font-weight: 600;
+  text-align: center;
+  border-radius: var(--rounded-md);
+}
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+}
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
