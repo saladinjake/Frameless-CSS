@@ -48,50 +48,48 @@ header { position: relative; z-index: 10;  }
 
 
 
-
-.font-bold {
-  font-weight: 700;
-}
-
-.font-semibold {
-  font-weight: 600;
-}
-
-/* === Flex Utilities === */
-
-
-/* === Buttons & Inputs === */
+/* === Buttons & Inputs for footer=== */
 .input {
-  border: 1px solid #ccc;
-  background-color: #fff;
-  font-size: 0.875rem;
-  border-radius: 9999px;
-  outline: none;
-  transition: border 0.2s ease;
+ border: 1px solid #ccc;
+ background-color: #fff;
+ font-size: 0.875rem;
+ border-radius: 9999px;
+ outline: none;
+ transition: border 0.2s ease;
 }
 
 .input:focus {
-  border-color: #333;
-}
-
-.btn {
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+ border-color: #333;
 }
 
 .btn-light {
-  background-color: #fff;
-  color: #000;
+ background-color: #fff;
+ color: #000;
 }
 
 .btn-light:hover {
-  background-color: #f0f0f0;
+ background-color: #f0f0f0;
 }
 
-/* === Responsive (optional for mobile) === */
-@media (min-width: 768px) {
-  .md\\:flex-row {
-    flex-direction: row;
-  }
+
+
+.carousel img { display: block; }
+
+.w-200{width: 200px}
+.h-200{height:200px}
+.contain{object-fit:contain;}
+
+
+/* Cards for featured sections */
+
+.card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 0 0.75rem rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
 }
+.card:hover {
+  transform: translateY(-5px);
+}
+

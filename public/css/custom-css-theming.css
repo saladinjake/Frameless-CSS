@@ -670,9 +670,6 @@
 .gap-6 { gap: 1.5rem; }
 .gap-10 { gap: 2.5rem; }
 
-/* Grid */
-
-
 
 
 
@@ -797,6 +794,12 @@
   .sm\:bg-gray-800 { background-color: #1f2937; }
   .sm\:text-gray-900 { color: #111827; }
   .sm\:bg-gray-900 { background-color: #111827; }
+
+    .sm\:grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+
+
+   
 }
 
 
@@ -804,9 +807,8 @@
 
 
 
-
-
 @media (min-width: 768px) {
+ 
   .md\:p-0 { padding: 0rem; }
   .md\:m-0 { margin: 0rem; }
   .md\:p-0.5 { padding: 0.125rem; }
@@ -888,6 +890,9 @@
   .md\:flex-row { flex-direction: row; }
   .md\:text-left { text-align: left; }
   .md\:text-5xl { font-size: 3rem; }
+   
+  .md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+  /* .md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); } */
   .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
   .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
 }
