@@ -629,6 +629,19 @@
 .transition { transition: all var(--transition-fast) ease; }
 
 
+[data-animate="fade-in-up"] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate="fade-in-up"].animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
 
 
 
@@ -645,4 +658,15 @@
 }
 
 
-/*ui aesthetics and smoothening...*/
+/*ui aesthetics, responsiveness and smoothening...*/
+/* Responsive variants */
+@media (min-width: 768px) {
+  .md\:flex { display: flex; }
+  .md\:hidden { display: none; }
+  .md\:w-1\/2 { width: 50%; }
+  .md\:flex-row { flex-direction: row; }
+  .md\:text-left { text-align: left; }
+  .md\:text-5xl { font-size: 3rem; }
+  .md\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0,1fr)); }
+  .md\:grid-cols-4 { grid-template-columns: repeat(4, minmax(0,1fr)); }
+}
