@@ -56,6 +56,19 @@
 .p-3.5 { padding: 0.875rem; }
 .p-4 { padding: 1rem; }
 .p-5 { padding: 1.25rem; }
+.p-6  { padding: 1.5rem; }
+.p-7  { padding: 1.75rem; }
+.p-8  { padding: 2rem; }
+.p-10 { padding: 2.5rem; }
+.p-12 { padding: 3rem; }
+.p-16 { padding: 4rem; }
+.p-20 { padding: 5rem; }
+.p-24 { padding: 6rem; }
+.p-32 { padding: 8rem; }
+.p-40 { padding: 10rem; }
+.p-48 { padding: 12rem; }
+.p-56 { padding: 14rem; }
+.p-64 { padding: 16rem; }
 
 
 .pt-0 { padding-top: 0rem; }
@@ -68,6 +81,20 @@
 .pt-3.5 { padding-top: 0.875rem; }
 .pt-4 { padding-top: 1rem; }
 .pt-5 { padding-top: 1.25rem; }
+.pt-6  { padding-top: 1.5rem; }
+.pt-7  { padding-top: 1.75rem; }
+.pt-8  { padding-top: 2rem; }
+.pt-10 { padding-top: 2.5rem; }
+.pt-12 { padding-top: 3rem; }
+.pt-16 { padding-top: 4rem; }
+.pt-20 { padding-top: 5rem; }
+.pt-24 { padding-top: 6rem; }
+.pt-32 { padding-top: 8rem; }
+.pt-40 { padding-top: 10rem; }
+.pt-48 { padding-top: 12rem; }
+.pt-56 { padding-top: 14rem; }
+.pt-64 { padding-top: 16rem; }
+
 
 .pr-0 { padding-right: 0rem; }
 .pr-0.5 { padding-right: 0.125rem; }
@@ -215,6 +242,7 @@
 .my-3.5 { margin-top: 0.875rem; margin-bottom: 0.875rem; }
 .my-4 { margin-top: 1rem; margin-bottom: 1rem; }
 .my-5 { margin-top: 1.25rem; margin-bottom: 1.25rem; }
+
 
 
 
