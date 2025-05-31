@@ -660,6 +660,97 @@
 
 /*ui aesthetics, responsiveness and smoothening...*/
 /* Responsive variants */
+
+@media (min-width: 640px) {
+  .sm\:p-0 { padding: 0rem; }
+  .sm\:m-0 { margin: 0rem; }
+  .sm\:p-0.5 { padding: 0.125rem; }
+  .sm\:m-0.5 { margin: 0.125rem; }
+  .sm\:p-1 { padding: 0.25rem; }
+  .sm\:m-1 { margin: 0.25rem; }
+  .sm\:p-1.5 { padding: 0.375rem; }
+  .sm\:m-1.5 { margin: 0.375rem; }
+  .sm\:p-2 { padding: 0.5rem; }
+  .sm\:m-2 { margin: 0.5rem; }
+  .sm\:p-2.5 { padding: 0.625rem; }
+  .sm\:m-2.5 { margin: 0.625rem; }
+  .sm\:p-3 { padding: 0.75rem; }
+  .sm\:m-3 { margin: 0.75rem; }
+  .sm\:p-3.5 { padding: 0.875rem; }
+  .sm\:m-3.5 { margin: 0.875rem; }
+  .sm\:p-4 { padding: 1rem; }
+  .sm\:m-4 { margin: 1rem; }
+  .sm\:p-5 { padding: 1.25rem; }
+  .sm\:m-5 { margin: 1.25rem; }
+  .sm\:p-6 { padding: 1.5rem; }
+  .sm\:m-6 { margin: 1.5rem; }
+  .sm\:p-7 { padding: 1.75rem; }
+  .sm\:m-7 { margin: 1.75rem; }
+  .sm\:p-8 { padding: 2rem; }
+  .sm\:m-8 { margin: 2rem; }
+  .sm\:p-10 { padding: 2.5rem; }
+  .sm\:m-10 { margin: 2.5rem; }
+  .sm\:p-12 { padding: 3rem; }
+  .sm\:m-12 { margin: 3rem; }
+  .sm\:p-16 { padding: 4rem; }
+  .sm\:m-16 { margin: 4rem; }
+  .sm\:p-20 { padding: 5rem; }
+  .sm\:m-20 { margin: 5rem; }
+  .sm\:p-24 { padding: 6rem; }
+  .sm\:m-24 { margin: 6rem; }
+  .sm\:p-32 { padding: 8rem; }
+  .sm\:m-32 { margin: 8rem; }
+  .sm\:p-40 { padding: 10rem; }
+  .sm\:m-40 { margin: 10rem; }
+  .sm\:p-48 { padding: 12rem; }
+  .sm\:m-48 { margin: 12rem; }
+  .sm\:p-56 { padding: 14rem; }
+  .sm\:m-56 { margin: 14rem; }
+  .sm\:p-64 { padding: 16rem; }
+  .sm\:m-64 { margin: 16rem; }
+  .sm\:text-primary { color: #1d4ed8; }
+  .sm\:bg-primary { background-color: #1d4ed8; }
+  .sm\:text-secondary { color: #64748b; }
+  .sm\:bg-secondary { background-color: #64748b; }
+  .sm\:text-accent { color: #10b981; }
+  .sm\:bg-accent { background-color: #10b981; }
+  .sm\:text-white { color: #ffffff; }
+  .sm\:bg-white { background-color: #ffffff; }
+  .sm\:text-black { color: #000000; }
+  .sm\:bg-black { background-color: #000000; }
+  .sm\:text-gray-100 { color: #f3f4f6; }
+  .sm\:bg-gray-100 { background-color: #f3f4f6; }
+  .sm\:text-gray-200 { color: #e5e7eb; }
+  .sm\:bg-gray-200 { background-color: #e5e7eb; }
+  .sm\:text-gray-300 { color: #d1d5db; }
+  .sm\:bg-gray-300 { background-color: #d1d5db; }
+  .sm\:text-gray-400 { color: #9ca3af; }
+  .sm\:bg-gray-400 { background-color: #9ca3af; }
+  .sm\:text-gray-500 { color: #6b7280; }
+  .sm\:bg-gray-500 { background-color: #6b7280; }
+  .sm\:text-gray-600 { color: #4b5563; }
+  .sm\:bg-gray-600 { background-color: #4b5563; }
+  .sm\:text-gray-700 { color: #374151; }
+  .sm\:bg-gray-700 { background-color: #374151; }
+  .sm\:text-gray-800 { color: #1f2937; }
+  .sm\:bg-gray-800 { background-color: #1f2937; }
+  .sm\:text-gray-900 { color: #111827; }
+  .sm\:bg-gray-900 { background-color: #111827; }
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 768px) {
   .md\:flex { display: flex; }
   .md\:hidden { display: none; }
