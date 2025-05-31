@@ -555,6 +555,25 @@
 .transform { transform: none; }
 .-translate-y-1\/2 { transform: translateY(-50%); }
 
+.w-full { width: 100%; }
+.w-1\/2 { width: 50%; }
+.h-10 { height: 2.5rem; }
+.w-10 { width: 2.5rem; }
+
+/* Width / Height */
+.h-20 { height: 5rem; }
+.h-64 { height: 16rem;  }
+
+
+/*spacing calculation*/
+
+.space-x-4 > * + * { margin-left: var(--space-4); }
+.space-x-8 > * + * { margin-left: var(--space-8); }
+.space-y-5 > * + * { margin-top: 1.25rem; }
+
+
+
+
 
 /* Flex + Alignments */
 .items-center { align-items: center; }
@@ -604,11 +623,6 @@
 
 
 
-/*spacing calculation*/
-
-.space-x-4 > * + * { margin-left: var(--space-4); }
-.space-x-8 > * + * { margin-left: var(--space-8); }
-.space-y-5 > * + * { margin-top: 1.25rem; }
 
 /*animation classes*/
 
