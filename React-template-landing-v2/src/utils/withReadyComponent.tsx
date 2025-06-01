@@ -1,7 +1,7 @@
 // React Clean Architecture
 
 
-import { forwardRef, useImperativeHandle, useState,  } from "react"
+import { forwardRef, useEffect, useImperativeHandle, useState,  } from "react"
 import RemixedComponent from "../components/shared/MixinComponents";
 
 export interface InjectedProps {
@@ -26,12 +26,17 @@ export function withReadyComponentObserver<P>(WrappedComponent: any) {
 
 
 
+         useEffect(()=>{
+            setTimeout(()=>setDomReady(true),4000)
+         },[])
+
         return (
             <>
                 <WrappedComponent
                     {...(props as P)}
                     options={{ ...defaultOptions }}
                     domReady={domReady}
+                    setDomReady={setDomReady}
                 >
                     <RemixedComponent when={(rehyDrationPass: any, errorSafe: any) => domReady
                         && rehyDrationPass && errorSafe
@@ -39,14 +44,7 @@ export function withReadyComponentObserver<P>(WrappedComponent: any) {
 
                         {({ flagComponent, isLoading, childComponent, ...rest }: { flagComponent: any, isLoading: boolean, childComponent: any }) => (
                             <>
-                                {props.children({
-                                    ...props,
-                                    ...rest,
-                                    flagComponent,
-                                    isLoading: (props.isLoading),
-                                    childComponent: props.childComponent,
-                                    // more props mixins
-                                })}
+                            {props.childComponent}
                             </>
 
                         )}

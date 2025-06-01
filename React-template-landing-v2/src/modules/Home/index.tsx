@@ -1,10 +1,9 @@
 import { Fragment } from "react"
-
+import { WazoHeaderBranding } from "../../components/shared/Nav"
 const HomeModule =  () => {
     return (
    <Fragment>
-     
-<h3>Test css tokens works</h3>
+     <WazoHeaderBranding />
     </Fragment>
 
     )
