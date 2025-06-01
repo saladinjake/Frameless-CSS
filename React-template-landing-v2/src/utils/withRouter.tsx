@@ -20,6 +20,7 @@ export const withRouter = (SmartComponent: any) => {
         params={params}
         nextLocation={location}
         previousLocation={previousLocationRef}
+      
       />
     )
   }
