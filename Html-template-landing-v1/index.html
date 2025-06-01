@@ -259,6 +259,118 @@
         </section>
 
 
+
+
+
+
+
+
+
+
+
+<section class="bg-white py-20" data-animate="fade-in-up">
+  <div class="container max-w-screen-lg mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="h-64 bg-gray-100 rounded-lg">
+         <img src="./public/svg/encryption.svg" />
+    </div> <!-- Placeholder for image -->
+    
+    <div>
+      <p class="text-xs text-muted tracking-wide uppercase mb-2">MOVE DIGITALLY</p>
+      <h2 class="text-xl font-semibold mb-4">Stablecoins to cash</h2>
+      <p class="text-sm text-muted mb-6">
+        You can easily convert your cryptocurrencies into local currency and spend with friends and family.
+      </p>
+      <ol class="list-decimal text-sm text-muted space-y-2 pl-5">
+        <li>Choose the type of stablecoin to send</li>
+        <li>Provide your wallet or account</li>
+        <li>Choose preferred local bank or kiosk</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+        
+
+<section class="py-20 px-4 bg-light">
+  <div class="container text-center">
+    <p class="uppercase text-sm text-muted tracking-wide mb-2">Quick information</p>
+    <h2 class="text-xl font-bold mb-10">Frequently Asked Questions</h2>
+
+    <div class="grid gap-4 max-w-3xl mx-auto text-left">
+      
+      <!-- FAQ Item -->
+      <div class="bg-white rounded-lg shadow-sm p-2 mb-2 cursor-pointer card3" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="text-md font-semibold">What is Wazo?</h3>
+          <span class="text-muted">&#9662;</span>
+        </div>
+        <div class="faq-answer text-sm text-muted mt-2 hidden">
+          Wazo is a secure digital wallet that allows you to manage, send, and receive digital assets easily.
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-1 mb-2 cursor-pointer card3" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="text-md font-semibold">How do I add funds to Wazo?</h3>
+          <span class="text-muted">&#9662;</span>
+        </div>
+        <div class="faq-answer text-sm text-muted mt-2 hidden">
+          You can add funds by linking your bank account, credit card, or using local deposit partners.
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-1 mb-2 cursor-pointer card3" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="text-md font-semibold">How can I access my wallet address?</h3>
+          <span class="text-muted">&#9662;</span>
+        </div>
+        <div class="faq-answer text-sm text-muted mt-2 hidden">
+          Go to your wallet dashboard and click on “Receive” to see your unique wallet address.
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-1 mb-2 cursor-pointer card3" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="text-md font-semibold">Can I withdraw my funds to my local bank account?</h3>
+          <span class="text-muted">&#9662;</span>
+        </div>
+        <div class="faq-answer text-sm text-muted mt-2 hidden">
+          Yes, Wazo supports direct withdrawals to linked local bank accounts.
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-1  mb-2 cursor-pointer card3" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="text-md font-semibold">Can I move funds from wallets?</h3>
+          <span class="text-muted">&#9662;</span>
+        </div>
+        <div class="faq-answer text-sm text-muted mt-2 hidden">
+          Yes, you can transfer funds between different wallets or addresses.
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-sm p-1 mb-2 cursor-pointer card3" onclick="toggleFaq(this)">
+        <div class="flex justify-between items-center">
+          <h3 class="text-md font-semibold">Can I import an existing wallet?</h3>
+          <span class="text-muted">&#9662;</span>
+        </div>
+        <div class="faq-answer text-sm text-muted mt-2 hidden">
+          Absolutely. Just use your recovery phrase or private key to import your wallet.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     </main>
 
 
@@ -323,6 +435,12 @@
   document.querySelectorAll('[data-animate]').forEach(el => {
     observer.observe(el);
   });
+</script>
+<script>
+  function toggleFaq(el) {
+    const answer = el.querySelector('.faq-answer');
+    answer.classList.toggle('hidden');
+  }
 </script>
 </body>
 

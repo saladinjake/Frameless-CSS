@@ -145,3 +145,17 @@ header { position: relative; z-index: 10;  }
     transform: translateY(0);
   }
 }
+
+
+
+
+
+
+/* FAQ Arrow */
+.card span {
+  transition: transform 0.3s ease;
+}
+
+.card.open span {
+  transform: rotate(180deg);
+}
