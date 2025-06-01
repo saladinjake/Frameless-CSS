@@ -1,4 +1,3 @@
-import { ReactNode } from "react"
 import { withReadyComponentObserver } from "../../utils/withReadyComponent"
 
 
