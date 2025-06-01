@@ -1,7 +1,7 @@
 // React Clean Architecture
 
 
-import { forwardRef, useImperativeHandle, useState, ComponentType } from "react"
+import { forwardRef, useImperativeHandle, useState,  } from "react"
 import RemixedComponent from "../components/shared/MixinComponents";
 
 export interface InjectedProps {

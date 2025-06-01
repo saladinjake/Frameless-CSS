@@ -1,6 +1,6 @@
 // Transforms a component to a higher level functional component with mixins
 import { useLocation, useParams, useNavigate } from "react-router-dom";
- import { ReactNode, useEffect,  useRef } from "react";
+ import {  useEffect,  useRef } from "react";
 export const withRouter = (SmartComponent: any) => {
   return (props: any) => {
     // Form pages can inject more encapsulated functionality here
