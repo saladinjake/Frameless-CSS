@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { withRouter } from '../../utils/withRouter';
 
 const MixInComponent = (props: any) => {
-  const [flagComponent, setFlagComponent] = useState(props.when)
+  const [flagComponent, ] = useState(props.when)
 
   return (
     <div>

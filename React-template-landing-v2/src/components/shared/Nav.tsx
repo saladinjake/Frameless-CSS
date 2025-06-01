@@ -3,17 +3,13 @@ import { getNavMenu, IMenuItem } from "../../api/menu.api"
 import { useEffect, useState } from "react"
 
 
-interface IHeaderProps {
-    dataLinks: IMenuItem[]
-}
-
-export const WazoHeaderBranding = withReadyComponentObserver(({ domReady, setDomReady }: any
+export const WazoHeaderBranding = withReadyComponentObserver(({ domReady, }: any
 
 ) => {
     const [menu, setMenu] = useState<IMenuItem | any
     >([])
 
-    console.log(domReady,"<<<<<<<<<<<")
+  
     useEffect(() => {
         async function loadMenu() {
             try {
@@ -27,7 +23,7 @@ export const WazoHeaderBranding = withReadyComponentObserver(({ domReady, setDom
 
 
     if(!domReady) return <>Loading...</>
-
+ 
     return (
         <header className="bg-white shadow">
             <div className="container flex items-center justify-between py-4">

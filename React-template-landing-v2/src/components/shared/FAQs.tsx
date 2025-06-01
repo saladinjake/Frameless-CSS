@@ -1,16 +1,15 @@
-import { useRef } from "react"
 import { withReadyComponentObserver } from "../../utils/withReadyComponent"
 
 const Accordion = ({ title, content }: any) => {
  
-    const faqRef = useRef<HTMLElement|undefined>()
+  
     const toggleFaq = () => {
-        const answer = faqRef.current?.querySelector('.faq-answer');
+        const answer = document?.querySelector('.faq-answer');
         answer?.classList?.toggle('hidden');
     }
     return (
 
-        <div ref={faqRef} className="bg-white rounded-lg shadow-sm p-2 mb-2 cursor-pointer card3" onClick={toggleFaq}>
+        <div className="bg-white rounded-lg shadow-sm p-2 mb-2 cursor-pointer card3" onClick={toggleFaq}>
             <div className="flex justify-between items-center">
                 <h3 className="text-md font-semibold">{title}</h3>
                 <span className="text-muted">&#9662;</span>

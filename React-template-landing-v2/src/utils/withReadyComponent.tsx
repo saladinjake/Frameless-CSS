@@ -42,7 +42,7 @@ export function withReadyComponentObserver<P>(WrappedComponent: any) {
                         && rehyDrationPass && errorSafe
                     }>
 
-                        {({ flagComponent, isLoading, childComponent, ...rest }: { flagComponent: any, isLoading: boolean, childComponent: any }) => (
+                        {() => (
                             <>
                             {props.childComponent}
                             </>
