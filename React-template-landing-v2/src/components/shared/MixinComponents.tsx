@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { withRouter } from './withRouter';
+import { withRouter } from '../../utils/withRouter';
 
-const NavigationPrompt = (props: any) => {
+const MixInComponent = (props: any) => {
   const [flagComponent, setFlagComponent] = useState(props.when)
 
   return (
@@ -18,5 +18,5 @@ const NavigationPrompt = (props: any) => {
 }
 
 
-export default withRouter(NavigationPrompt);
+export default withRouter(MixInComponent);
   
