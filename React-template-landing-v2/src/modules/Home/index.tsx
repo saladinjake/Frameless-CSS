@@ -8,6 +8,7 @@ import { SecurityGrids } from "../../components/shared/SecurityGrids"
 import { StableCoinInformation } from "../../components/shared/StableCoin"
 import { Faq } from "../../components/shared/FAQs"
 import { JoinMailingList } from "../../components/shared/JoinMailingList"
+import { Footer } from "../../components/shared/Footer"
 const HomeModule = () => {
   return (
     <Fragment>
@@ -23,6 +24,7 @@ const HomeModule = () => {
         <StableCoinInformation/>
         <Faq />
         <JoinMailingList/>
+        <Footer/>
     </Fragment>
 
   )

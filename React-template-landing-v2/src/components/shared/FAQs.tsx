@@ -1,9 +1,16 @@
+import { useRef } from "react"
 import { withReadyComponentObserver } from "../../utils/withReadyComponent"
 
-const Accordion = ({ title, content, toggleFaq }: any) => {
+const Accordion = ({ title, content }: any) => {
+ 
+    const faqRef = useRef<HTMLElement|undefined>()
+    const toggleFaq = () => {
+        const answer = faqRef.current?.querySelector('.faq-answer');
+        answer?.classList?.toggle('hidden');
+    }
     return (
 
-        <div className="bg-white rounded-lg shadow-sm p-2 mb-2 cursor-pointer card3" onClick={toggleFaq}>
+        <div ref={faqRef} className="bg-white rounded-lg shadow-sm p-2 mb-2 cursor-pointer card3" onClick={toggleFaq}>
             <div className="flex justify-between items-center">
                 <h3 className="text-md font-semibold">{title}</h3>
                 <span className="text-muted">&#9662;</span>
@@ -16,7 +23,6 @@ const Accordion = ({ title, content, toggleFaq }: any) => {
     )
 }
 export const Faq = withReadyComponentObserver(({ domReady }: { domReady: boolean }) => {
-    const toggleFaq = ({ target }: any) => { }
     if (!domReady) return <>Loading...</>
 
     return (
@@ -33,39 +39,33 @@ export const Faq = withReadyComponentObserver(({ domReady }: { domReady: boolean
                         title="What is Wazo?"
                         content={` Wazo is a secure digital wallet that allows you to manage, send, and receive digital assets easily.
                         `}
-                        toggleFaq={toggleFaq}
                     />
                     
 
                     <Accordion
                         title="How do I add funds to Wazo?"
                         content={` You can add funds by linking your bank account, credit card, or using local deposit partners.`}
-                        toggleFaq={toggleFaq}
                     />
                   
 
                     <Accordion
                         title="How can I access my wallet address?"
                         content={`Go to your wallet dashboard and click on “Receive” to see your unique wallet address.`}
-                        toggleFaq={toggleFaq}
                     />
                     <Accordion
                         title="Can I withdraw my funds to my local bank account?"
                         content={`Yes, Wazo supports direct withdrawals to linked local bank accounts.`}
-                        toggleFaq={toggleFaq}
                     />
                   <Accordion
                         title="Can I move funds from wallets?"
                         content={`    Yes, you can transfer funds between different wallets or addresses.
                         `}
-                        toggleFaq={toggleFaq}
                     />
 
                   <Accordion
                         title="Can I import an existing wallet?"
                         content={`Absolutely. Just use your recovery phrase or private key to import your wallet.
                         `}
-                        toggleFaq={toggleFaq}
                     />
 
                     
