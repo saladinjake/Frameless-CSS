@@ -6,6 +6,8 @@ import { Services } from "../../components/shared/Services"
 import { HowItWorks } from "../../components/shared/HowItWorks"
 import { SecurityGrids } from "../../components/shared/SecurityGrids"
 import { StableCoinInformation } from "../../components/shared/StableCoin"
+import { Faq } from "../../components/shared/FAQs"
+import { JoinMailingList } from "../../components/shared/JoinMailingList"
 const HomeModule = () => {
   return (
     <Fragment>
@@ -19,6 +21,8 @@ const HomeModule = () => {
         <HowItWorks/>
         <SecurityGrids/>
         <StableCoinInformation/>
+        <Faq />
+        <JoinMailingList/>
     </Fragment>
 
   )
