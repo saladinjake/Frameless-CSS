@@ -57,7 +57,7 @@ Use it like Tailwind — but with your own design tokens, naming conventions, an
 ````
 ## 🔧 Installation
 Option 1: CDN (ideal for prototyping)
-
+````
 <link rel="stylesheet" href="https://cdn.yoursite.com/frameless.min.css" />
 Option 2: Manual
 
@@ -65,13 +65,12 @@ Copy frameless.css into your project:
 
 <link rel="stylesheet" href="/css/frameless.css" />
 Option 3: NPM (if using build tools)
-``
+
 npm install frameless-css
-``
+
 Then import in your global CSS:
-``
 @import "frameless-css/dist/frameless.css";
-``
+````
 ## 🎨 Design Tokens
 Defined in src/tokens.css:
 ````
