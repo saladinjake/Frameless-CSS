@@ -178,17 +178,11 @@ MIT — free to use, extend, and modify.
 ## 🌱 Inspiration
 Frameless CSS is inspired by Tailwind, Basscss, and Open Props — but aims to be even simpler and easier to maintain in modern frontend workflows, especially for startup MVPs, clean HTML sites, and one-off UI prototypes.
 
-Let me know if you want:
 
-docs/UTILITIES.md auto-generated from your utilities
 
-Tailwind Play or Codepen examples
 
-Full job board example using Frameless
 
-VSCode snippets for all classes
 
-I can also turn this into a markdown file or push it into your GitHub repo layout.
 
 
 
