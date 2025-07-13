@@ -103,7 +103,7 @@ lg: 1024px
 
 xl: 1280px
 
- Usage:
+#### Usage:
  
 ``
 <div class="p-2 md:p-4 lg:p-6">
