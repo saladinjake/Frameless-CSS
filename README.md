@@ -113,10 +113,10 @@ Layout with Flex & Grid:
 <div class="flex justify-between items-center"> <div class="w-1/2 p-2">Left</div> <div class="w-1/2 p-2">Right</div> </div>
 Responsive Typography:
 
-<h1 class="text-lg md:text-xl lg:text-2xl font-bold">
+<h1 class="text-lg md:text-xl lg:text-2xl font-bold">Sample</h1>
 Buttons:
 
-<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition">
+<button class="bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark transition"> </button>
 Card:
 
 <div class="rounded shadow p-4 bg-white">
