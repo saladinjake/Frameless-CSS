@@ -38,7 +38,7 @@ Use it like Tailwind — but with your own design tokens, naming conventions, an
 ✅ CSS-only: no dependencies, no build step required (but PostCSS optional)
 
 ## 📁 File Structure
-frameless-css/
+````frameless-css/
 ├── dist/
 │ └── frameless.css # Compiled main CSS file
 ├── src/
@@ -54,7 +54,7 @@ frameless-css/
 │ └── responsive.css # Media query utilities
 ├── README.md
 └── package.json (optional)
-
+````
 ## 🔧 Installation
 Option 1: CDN (ideal for prototyping)
 
