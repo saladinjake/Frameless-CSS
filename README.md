@@ -65,16 +65,16 @@ Copy frameless.css into your project:
 
 <link rel="stylesheet" href="/css/frameless.css" />
 Option 3: NPM (if using build tools)
-
+``
 npm install frameless-css
-
+``
 Then import in your global CSS:
-
+``
 @import "frameless-css/dist/frameless.css";
-
+``
 ## 🎨 Design Tokens
 Defined in src/tokens.css:
-
+````
 :root {
 --primary: #16a34a;
 --primary-light: #d1fae5;
@@ -91,10 +91,10 @@ Defined in src/tokens.css:
 --space-3: 0.75rem;
 --space-4: 1rem;
 }
-
+````
 ## 📏 Responsive Breakpoints
 Defined in responsive.css:
-
+````
 sm: 640px
 
 md: 768px
@@ -105,11 +105,10 @@ xl: 1280px
 
 #### Usage:
  
-``
+````
 <div class="p-2 md:p-4 lg:p-6">
 📚 Usage Examples
 Layout with Flex & Grid:
-
 <div class="flex justify-between items-center"> <div class="w-1/2 p-2">Left</div> <div class="w-1/2 p-2">Right</div> </div>
 Responsive Typography:
 
@@ -132,7 +131,7 @@ Effects	shadow, transition, hover:bg
 Responsive	md:flex, lg:text-xl
 
 Full reference: docs/UTILITIES.md (or generate from CSS)
-``
+````
 ##🛠️ Customize
 Frameless is meant to be forked. To add or remove utilities:
 
